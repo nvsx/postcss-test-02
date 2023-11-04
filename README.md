@@ -34,4 +34,7 @@ npx update-browserslist-db@latest
 2. development: ```npx postcss src/scss/main.scss --env development -o output/main-dev.css --verbose```
 3. watching:    ```npx postcss src/scss/main.scss --env development -o output/main-watch.css --verbose --watch```
 
+## More info
+- https://www.postcss.parts/
+
 
