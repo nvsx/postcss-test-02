@@ -20,14 +20,13 @@ yarn
 ```
 
 ## B) Config browserslist
+- defined in .browserslist
+- show supported browsers: npx browserslist
 ```zsh
 # old: npx browserslist@latest --update-db
 # new:
 npx update-browserslist-db@latest
 ```
-- defined in .browserslist
-- update: npx browserslist@latest --update-db
-- show supported browsers: npx browserslist
 
 ## C) Build css
 1. production:  ```npx postcss src/scss/main.scss --env production  -o output/main.css```
