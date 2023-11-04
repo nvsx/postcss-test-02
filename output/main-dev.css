@@ -1,0 +1,159 @@
+/* partial imports*/
+/* default fonts*/
+/* default colors*/
+/* code sample colors*/
+/* reset padding and margin*/
+
+/* reset styles*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class], ol[class] {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul[class] li, ol[class] li {
+  padding: 0;
+  margin: 0;
+  }
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: clamp(100%, 2vw, 200%);
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #444;
+
+}
+pre, code {
+  font-family: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  font-size: inherit;
+  line-height: 1.2;
+  color: #0c0;
+  /* background-color: $color-code-back; */
+  background-color: lightsteelblue;
+
+  border: 1px solid #666;
+}
+pre code {
+  color: inherit;
+  background-color: inherit;
+  border: 0 none;
+}
+
+/* inline SVG icons*/
+
+.icon, .icon::before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon::before {
+  content: '';
+  width: 1.6em;
+  height: 1.6em;
+  font-weight: normal;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.email::before {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22currentColor%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M0%203.6A2%202%200%20012%202h12a2%202%200%20012%201.6L8%208.4%200%203.6zm0%201.1v7.1l5.8-3.6L0%204.7zm6.8%204.1l-6.6%204A2%202%200%20002%2014h12a2%202%200%20001.8-1.1l-6.6-4-1.2.7-1.2-.8zm3.4-.6l5.8%203.6V4.7l-5.8%203.5z%22%2F%3E%3C%2Fsvg%3E');
+  }
+
+.rss::before {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22currentColor%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M2%200a2%202%200%2000-2%202v12a2%202%200%20002%202h12a2%202%200%20002-2V2a2%202%200%2000-2-2H2zm1.5%202.5a1%201%200%20000%202%208%208%200%20018%208%201%201%200%20102%200%2010%2010%200%2000-10-10zm0%204a1%201%200%20000%202%204%204%200%20014%204%201%201%200%20102%200%206%206%200%2000-6-6zm.5%207a1.5%201.5%200%20100-3%201.5%201.5%200%20000%203z%22%2F%3E%3C%2Fsvg%3E');
+  }
+
+.twitter::before {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M496%20110a202%20202%200%2001-57%2015%2098%2098%200%200044-54%20198%20198%200%2001-63%2024%2099%2099%200%2000-72-31c-54%200-98%2043-98%2097a93%2093%200%20002%2022A281%20281%200%200149%2082a96%2096%200%2000-13%2048c0%2034%2018%2064%2044%2081a98%2098%200%2001-45-12v1c0%2047%2034%2086%2079%2095a101%20101%200%2001-26%204%2094%2094%200%2001-18-2c12%2038%2049%2066%2092%2067a200%20200%200%2001-122%2042%20203%20203%200%2001-24-2%20279%20279%200%2000151%2044%20276%20276%200%2000280-288%20198%20198%200%200049-50z%22%2F%3E%3C%2Fsvg%3E');
+  }
+
+/* media query breakpoints*/
+
+/*
+responsive breakpoint mixin:
+@include respond('medium') { ... }
+*/
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#menu {
+  width: 100%;
+}
+
+@media (min-width: 36rem) {
+
+#menu {
+    width: 20rem
+}
+}
+
+@media (min-width: 50rem) {
+
+main {
+    width: 40em
+}
+
+#menu {
+    width: 30rem
+}
+}
+
+@media (min-width: 64rem) {
+
+#menu {
+    width: 40rem
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *, *:before, *:after {
+    transition-timing-function: step-start !important;
+    animation-delay: 0s !important;
+    animation-timing-function: step-start !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/*# sourceMappingURL=main-dev.css.map */

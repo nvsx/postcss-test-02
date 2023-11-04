@@ -1,0 +1,24 @@
+{
+  "name": "postcss-test-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-assets": "^6.0.0",
+    "postcss-cli": "^10.1.0",
+    "postcss-map-get": "^0.3.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-scss": "^4.0.9",
+    "postcss-sort-media-queries": "^5.2.0"
+  }
+}
