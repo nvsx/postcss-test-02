@@ -22,6 +22,7 @@ yarn
 ## B) Config browserslist
 - defined in .browserslist
 - show supported browsers: npx browserslist
+- see also https://github.com/browserslist/browserslist#readme
 ```zsh
 # old: npx browserslist@latest --update-db
 # new:
